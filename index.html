@@ -9,10 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <style>
-
-.navbar {
-            
-            /* Rounded bottom corners */
+        .navbar {
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
         }
 
@@ -20,7 +17,6 @@
             color: black !important; /* Brand color */
             font-weight: bold; /* Bold text */
             transition: color 0.3s; /* Transition for hover effect */
-            
         }
 
         .navbar-brand:hover {
@@ -28,7 +24,7 @@
         }
 
         .nav-link {
-          text-transform: uppercase;
+            text-transform: uppercase;
             color: black !important; /* Link color */
             margin-right: 20px; /* Space between links */
             position: relative; /* Required for the line effect */
@@ -39,7 +35,6 @@
             color: #055b86 !important; /* Hover color for links */
         }
 
-        /* Animation for the underline effect */
         .nav-link::after {
             content: '';
             display: block;
@@ -64,146 +59,163 @@
         .navbar-toggler-icon {
             background-color: white; /* Toggler icon color */
         }
+
         /* Custom Styles */
         .hero-section {
             background: url('image/bg.png') center center/cover no-repeat;
             color: rgb(7, 0, 0);
-            
             text-align: center;
-            padding: 150px 0;
+            padding: 100px 0; /* Reduced padding for smaller screens */
         }
-        .hero-section h1,h2{
-          text-shadow: 2px 2px 4px rgba(47, 46, 46, 0.7);
+
+        .hero-section h1,
+        .hero-section h2 {
+            text-shadow: 2px 2px 4px rgba(47, 46, 46, 0.7);
         }
+
         .btn-learn-more {
             background-color: #055b86;
             color: white;
             border-radius: 30px;
             padding: 10px 30px;
         }
+
         .btn-learn-more:hover {
             background-color: #02334b;
             color: aliceblue;
         }
+
         .about-section {
             padding: 60px 0;
         }
+
         .service-box {
             padding: 20px;
             background-color: white;
             border-radius: 10px;
             margin-bottom: 30px;
         }
-     
 
         .custom-container {
-      padding: 50px 0;
-    }
-    .about-us h3 {
-      font-weight: bold;
-    }
-    .about-us p {
-      color: #000000;
-    }
-    .icon-check {
-      color: #055b86;
-    }
-    .experience {
-      background-color: #055b86;
-      padding: 20px;
-      text-align: center;
-      color: white;
-      font-weight: bold;
-      font-size: 24px;
-      border-radius: 50px;
-      margin-top: 20px;
-    }
-    .btn-read-more{
-      border-radius: 30px;
-      background-color: #055b86;
-      color: white;
-    }
-    .btn-read-more:hover{
-      background-color: #02334b;
-      color: #F1F6ED;
-      
-    }
-   
+            padding: 50px 15px; /* Use smaller padding for mobile */
+        }
 
-    .service-section {
-  position: relative;
-  padding: 50px 0;
-}
+        .about-us h3 {
+            font-weight: bold;
+        }
 
-.service-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('image/bbg.jpg') center center/cover no-repeat;
-  filter: blur(2px); /* Reduce opacity of the background image */
-  z-index: 1;
-}
+        .about-us p {
+            color: #000000;
+        }
 
-.service-section .container {
-  position: relative;
-  z-index: 2; /* Ensures the content stays above the background */
-}
+        .icon-check {
+            color: #055b86;
+        }
 
-/* Animation for Service Cards */
-.animated-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
-    cursor: pointer; /* Change cursor to pointer */
-}
+        .experience {
+            background-color: #055b86;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            font-size: 24px;
+            border-radius: 50px;
+            margin-top: 20px;
+        }
 
-.animated-card:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
-}
+        .btn-read-more {
+            border-radius: 30px;
+            background-color: #055b86;
+            color: white;
+        }
 
+        .btn-read-more:hover {
+            background-color: #02334b;
+            color: #F1F6ED;
+        }
 
-.service-box{
-  height: auto;
-}
-    .service-box h5 {
-      font-weight: bold;
-      margin-bottom: 15px;
-    }
-    .footer {
-      background-color: #055b86;
-      color: white;
-      padding: 40px 0;
-    }
-    .footer h5 {
-      color: white;
-    }
-    .footer ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    .footer ul li {
-      margin-bottom: 10px;
-    }
-    .gallery img {
-            width: 150px; /* Set specific width */
-            height: 150px; /* Set specific height */
+        .service-section {
+            position: relative;
+            padding: 50px 15px; /* Use smaller padding for mobile */
+        }
+
+        .service-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('image/bbg.jpg') center center/cover no-repeat;
+            filter: blur(2px); /* Reduce opacity of the background image */
+            z-index: 1;
+        }
+
+        .service-section .container {
+            position: relative;
+            z-index: 2; /* Ensures the content stays above the background */
+        }
+
+        /* Animation for Service Cards */
+        .animated-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+            cursor: pointer; /* Change cursor to pointer */
+        }
+
+        .animated-card:hover {
+            transform: scale(1.05); /* Slightly enlarge on hover */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+        }
+
+        .service-box {
+            height: auto;
+        }
+
+        .service-box h5 {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            background-color: #055b86;
+            color: white;
+            padding: 40px 15px; /* Use smaller padding for mobile */
+        }
+
+        .footer h5 {
+            color: white;
+        }
+
+        .footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .footer ul li {
             margin-bottom: 10px;
+        }
+
+        .gallery img {
+            width: 100%; /* Responsive width */
+            height: auto; /* Maintain aspect ratio */
             border-radius: 5px;
             transition: transform 0.3s ease; /* Smooth transition */
         }
 
-    .gallery img:hover {
+        .gallery img:hover {
             transform: scale(1.1); /* Scale up image on hover */
         }
-    .footer a{
-      text-decoration: none;
-    }
-    .tick{
-      background-color: #055b86;
-      color: white;
-    }
+
+        .footer a {
+            text-decoration: none;
+        }
+
+        .tick {
+            background-color: #055b86;
+            color: white;
+        }
+
+        /* Responsive adjustments */
         @media (max-width: 576px) {
             .hero-section {
                 padding: 80px 0; /* Less padding for smaller screens */
@@ -258,182 +270,81 @@
                 <li class="nav-item"><a class="nav-link" href="#"><b>Contact</b></a></li>
             </ul>
         </div>
-        <div class="d-none d-lg-block" style="color: #148ac5;">
-            <span><i class="fas fa-comment"></i>
-              (307) 555-0133</span>
-        </div>
     </div>
 </nav>
 
 <!-- Hero Section -->
 <section class="hero-section">
     <div class="container">
-        <h1>Journey with Confidence</h1>
-        <h2>Migrate with Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h1>Welcome to RouteX</h1>
+        <h2>Your Adventure Awaits</h2>
         <a href="#" class="btn btn-learn-more">Learn More</a>
     </div>
 </section>
 
-<section class="custom-container container">
-  <div class="row">
-    <!-- Image Section -->
-    <div class="col-md-6 d-flex flex-column justify-content-around">
-      <div class="d-flex justify-content-between">
-        <img src="image/im1.png" class="img-fluid rounded" alt="Customer support">
-         
-      
-      </div>
-      <div class="experience col-9 mt-4">
-        10+<br>
-        Years of Experience
-      </div>
+<!-- About Us Section -->
+<section class="about-section custom-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 about-us">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel metus scelerisque ante sollicitudin.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="image/about.jpg" alt="About Us" class="img-fluid rounded">
+            </div>
+        </div>
     </div>
-    <!-- Text Section -->
-    <div class="col-md-6 about-us">
-      <h4>ABOUT US</h4>
-      <h3>Unknown Wanderlust <br> Your Journey into</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet risus nunc. Duis egestas ac ante sed tincidunt.</p>
-      <ul class="list-unstyled">
-        <li><span class="tick">&#10003;</span> Safety Guides</li>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-        <li><span class="tick">&#10003;</span>  Passport Assistance</li>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-      </ul>
-      <a href="#" class="btn btn-read-more">Read More</a>
-    </div>
-  </div>
 </section>
-
 
 <!-- Services Section -->
 <section class="service-section">
-  <div class="container">
-    <h6 class="text-uppercase mb-3">Our Services</h6>
-    <h2 class="mb-5">Adventure Unleashed<br>Discover Your Next</h2>
-    
-    <div class="row text-center">
-      <!-- Service 1 -->
-      <div class="col-md-4 mb-4">
-        <div class="service-box animated-card">
-          <div class="service-icon">
-            <img src="image/slogo1.png" alt="Food and Wine Tours" class="img-fluid">
-          </div>
-          <h5>Food and Wine Tours</h5>
-          <p>Dolor sit amet, consectetur adipiscing elit. Sed sit amet risus nunc.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet risus nunc. Duis egestas ac ante sed tincidunt.
-          </p>
+    <div class="container">
+        <h2 class="text-center text-white">Our Services</h2>
+        <div class="row">
+            <div class="col-md-4 animated-card">
+                <div class="service-box">
+                    <h5>Service 1</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="col-md-4 animated-card">
+                <div class="service-box">
+                    <h5>Service 2</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+            <div class="col-md-4 animated-card">
+                <div class="service-box">
+                    <h5>Service 3</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <!-- Service 2 -->
-      <div class="col-md-4 mb-4">
-        <div class="service-box animated-card">
-          <div class="service-icon">
-            <img src="image/slogo3.png" alt="Travel Opportunities" class="img-fluid">
-          </div>
-          <h5>Travel Opportunities</h5>
-          <p>Dolor sit amet, consectetur adipiscing elit. Sed sit amet risus nunc.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet risus nunc. Duis egestas ac ante sed tincidunt.
-          </p>
-        </div>
-      </div>
-
-      <!-- Service 3 -->
-      <div class="col-md-4 mb-4">
-        <div class="service-box animated-card">
-          <div class="service-icon">
-            <img src="image/slogo2.png" alt="Solo Travel Planning" class="img-fluid">
-          </div>
-          <h5>Solo Travel Planning</h5>
-          <p>Dolor sit amet, consectetur adipiscing elit. Sed sit amet risus nunc.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet risus nunc. Duis egestas ac ante sed tincidunt.
-          </p>
-        </div>
-      </div>
     </div>
-  </div>
 </section>
 
+<!-- Experience Section -->
+<section class="experience">
+    <p>Experience the Journey of a Lifetime!</p>
+    <a href="#" class="btn btn-read-more">Read More</a>
+</section>
 
 <!-- Footer -->
 <footer class="footer">
-  <div class="container">
-    <div class="row">
-      <!-- Company Info -->
-      <div class="col-md-4 mb-4">
-        <h5>RouteX</h5>
-        <p>Corporate business typically refers to large-scale enterprises or organizations. Stay connected with us on social media.</p>
-        <div class="social-icons">
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-pinterest-p"></i>
-          <i class="fab fa-linkedin"></i>
-      </div>
-      </div>
-
-      <!-- Service Menu -->
-      <div class="col-md-2 mb-4">
-        <h5>Service Menu</h5>
+    <div class="container text-center">
+        <h5>Stay Connected</h5>
         <ul>
-          <li> <a href="#" class="text-white">&#10003; Mistakes To Avoid</a> </li>
-          <li> <a href="#" class="text-white">&#10003; Your Startup</a> </li>
-          <li> <a href="#" class="text-white">&#10003; Know About Fonts</a> </li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
         </ul>
-      </div>
-
-      <!-- Useful Links -->
-      <div class="col-md-2 mb-4">
-        <h5>Useful Links</h5>
-        <ul>
-          <li> <a href="#" class="text-white">Latest News</a> </li>
-          <li> <a href="#" class="text-white">Careers</a> </li>
-          <li> <a href="#" class="text-white">General Inquiries</a> </li>
-          <li> <a href="#" class="text-white">Case Studies</a> </li>
-        </ul>
-      </div>
-
-      <!-- Gallery -->
-      <!-- Gallery -->
-<div class="col-md-4 mb-4">
-  <h5>Gallery</h5>
-  <div class="row gallery">
-      <div class="col-6 col-md-4 mb-2">
-          <img src="image/g1.png" alt="Gallery Image" class="gallery img img-fluid">
-      </div>
-      <div class="col-6 col-md-4 mb-2">
-          <img src="image/g2.png" alt="Gallery Image" class="gallery img img-fluid">
-      </div>
-      <div class="col-6 col-md-4 mb-2">
-          <img src="image/g3.png" alt="Gallery Image" class="gallery img img-fluid">
-      </div>
-      <div class="col-6 col-md-4 mb-2">
-          <img src="image/g4.png" alt="Gallery Image" class="gallery img img-fluid">
-      </div>
-      <div class="col-6 col-md-4 mb-2">
-          <img src="image/g5.png" alt="Gallery Image" class="gallery img img-fluid">
-      </div>
-      <div class="col-6 col-md-4 mb-2">
-          <img src="image/g6.png" alt="Gallery Image" class="gallery img img-fluid">
-      </div>
-  </div>
-</div>
-
     </div>
-    <hr>
-    <!-- Bottom Links -->
-    <div class="d-flex justify-content-between pt-4">
-      <p>&copy; RRDevs 2024 | All Rights Reserved</p>
-      <ul class="list-inline">
-        <li class="list-inline-item"><a href="#" class="text-white">Terms & Conditions</a></li>
-        <li class="list-inline-item"><a href="#" class="text-white">Privacy Policy</a></li>
-        <li class="list-inline-item"><a href="#" class="text-white">Contact Us</a></li>
-      </ul>
-    </div>
-  </div>
 </footer>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap JS and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
 </body>
 </html>
