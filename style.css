@@ -105,8 +105,7 @@ p,li{
       .btn-learn-more:hover {
           background-color: #02334b; /* Darker shade on hover */
       }
-      
-      
+     
         .custom-container {
       padding: 50px 0;
       
@@ -349,6 +348,10 @@ p,li{
         .custom-container {
           padding: 15px;
         }
+        .custom-container img{
+          width: 100%; /* Make images take full width */
+          height: auto; 
+        }
     
         .btn-read-more,.btn-learn-more {
           font-size: 0.8rem;
@@ -422,6 +425,7 @@ p,li{
     .text-section p {
         font-size: 0.8rem;
     }
+    
     .custom-container {
         padding: 10px;
     }
