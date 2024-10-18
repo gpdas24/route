@@ -320,7 +320,7 @@ p,li{
         }
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 769px) {
         .text-section h2 {
             font-size: 1.5rem;
         }
@@ -352,6 +352,11 @@ p,li{
           width: 100%; /* Make images take full width */
           height: auto; 
         }
+        .custom-container .years{
+          width: 100%; /* Make images take full width */
+          height: auto; 
+        
+        }
     
         .btn-read-more,.btn-learn-more {
           font-size: 0.8rem;
@@ -379,7 +384,7 @@ p,li{
         }
     }
 
-    @media (max-width: 575px) {
+    @media (max-width: 577px) {
         .text-section h2 {
             font-size: 1.2rem;
         }
