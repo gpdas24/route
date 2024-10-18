@@ -74,16 +74,7 @@ p,li{
           font-optical-sizing: auto;
           font-weight: 700;
         }
-        .btn-learn-more {
-            background-color: #055b86;
-            color: white;
-            border-radius: 30px;
-            padding: 10px 30px;
-        }
-        .btn-learn-more:hover {
-            background-color: #02334b;
-            color: aliceblue;
-        }
+        
         .about-section {
             padding: 60px 0;
         }
@@ -96,7 +87,26 @@ p,li{
             color: #000000;
         }
      
-
+        .btn-consistent {
+          padding: 12px 20px; /* Adjust padding to control button size */
+          font-size: 1rem; /* Set a standard font size */
+          border-radius: 5px; /* Consistent border radius */
+          transition: background-color 0.3s; /* Smooth transition effect */
+          display: inline-block; /* Ensure proper box sizing */
+      }
+      
+      /* Customize button colors as needed */
+      .btn-learn-more {
+          background-color: #055b86; /* Primary button color */
+          color: white; /* Text color */
+          border-radius: 30px;
+      }
+      
+      .btn-learn-more:hover {
+          background-color: #02334b; /* Darker shade on hover */
+      }
+      
+      
         .custom-container {
       padding: 50px 0;
       
@@ -251,7 +261,61 @@ p,li{
         margin-bottom: 15px;
       }
       
-    
+      @media (max-width: 992px) {
+        .hero-section {
+            padding: 100px 0;
+        }
+        .service-section {
+            padding: 30px 0;
+        }
+        .btn-learn-more  .btn-read-more {
+            padding: 10px 15px;
+        }
+        .about-us h3 {
+            font-size: 1.5rem;
+        }
+        .about-us p {
+            font-size: 0.9rem;
+        }
+        .about-us ul li {
+            font-size: 0.9rem;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .text-section h2 {
+            font-size: 1.5rem;
+        }
+        .text-section p {
+            font-size: 0.9rem;
+        }
+        .custom-container {
+            padding: 15px;
+        }
+        .btn-read-more .btn-learn-more{
+            font-size: 0.8rem;
+            padding: 4px 15px;
+        }
+        .about-us {
+            margin-bottom: 30px; /* Add some margin to bottom of the about us section */
+        }
+    }
+
+    @media (max-width: 576px) {
+        .text-section h2 {
+            font-size: 1.2rem;
+        }
+        .text-section p {
+            font-size: 0.8rem;
+        }
+        .custom-container {
+            padding: 10px;
+        }
+        .btn-read-more .btn-learn-more{
+            font-size: 0.7rem;
+            padding: 4px 12px;
+        }
+    }
      @media (max-width: 768px) {
     .text-section h2 {
       font-size: 1.5rem;
@@ -265,7 +329,7 @@ p,li{
       padding: 15px;
     }
 
-    .btn-read-more {
+    .btn-read-more .btn-learn-more {
       font-size: 0.8rem;
       padding: 4px 15px;
     }
@@ -284,7 +348,7 @@ p,li{
       padding: 10px;
     }
 
-    .btn-read-more {
+    .btn-read-more .btn-learn-more {
       font-size: 0.7rem;
       padding: 4px 12px;
     }
