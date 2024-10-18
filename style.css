@@ -1,0 +1,291 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+p,li{
+  font-family: "Ubuntu", sans-serif;
+}
+
+
+.navbar {
+            
+            /* Rounded bottom corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+        }
+
+        .navbar-brand {
+            color: black !important; /* Brand color */
+            font-weight: bold; /* Bold text */
+            transition: color 0.3s; /* Transition for hover effect */
+            
+        }
+
+        .navbar-brand:hover {
+            color: #055b86 !important; /* Hover color */
+        }
+
+        .nav-link {
+          font-family: "Raleway", sans-serif;
+          text-transform: uppercase;
+            color: black !important; /* Link color */
+            margin-right: 20px; /* Space between links */
+            position: relative; /* Required for the line effect */
+            transition: color 0.3s; /* Transition for hover effect */
+        }
+
+        .nav-link:hover {
+            color: #055b86 !important; /* Hover color for links */
+        }
+
+        /* Animation for the underline effect */
+        .nav-link::after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 50%;
+            bottom: -5px; /* Positioning below the link */
+            width: 0;
+            height: 3px;
+            background: #055b86; /* Color of the line */
+            transition: all 0.4s ease; /* Animation effect */
+            transform: translateX(-50%); /* Center the line */
+        }
+
+        .nav-link:hover::after {
+            width: 100%; /* Expands to the full width of the link on hover */
+        }
+
+        .navbar-toggler {
+            border-color: white; /* Toggler border color */
+        }
+
+        .navbar-toggler-icon {
+            background-color: white; /* Toggler icon color */
+        }
+        /* Custom Styles */
+        .hero-section {
+            background: url('image/bg.png') center center/cover no-repeat;
+            color: rgb(7, 0, 0);
+            
+            text-align: center;
+            padding: 150px 0;
+        }
+        .hero-section h1,h2{
+          font-family: "Raleway", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 700;
+        }
+        .btn-learn-more {
+            background-color: #055b86;
+            color: white;
+            border-radius: 30px;
+            padding: 10px 30px;
+        }
+        .btn-learn-more:hover {
+            background-color: #02334b;
+            color: aliceblue;
+        }
+        .about-section {
+            padding: 60px 0;
+        }
+        .service-box {
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            color: #000000;
+        }
+     
+
+        .custom-container {
+      padding: 50px 0;
+      
+    }
+    .about-us h4{
+      color: #03405e;
+
+    }
+    .about-us h3 {
+      font-weight: bold;
+    }
+    .about-us p {
+      color: #000000;
+    }
+    .icon-check {
+      color: #055b86;
+    }
+    .experience {
+    height:10%;
+      background-color: #055b86;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      font-size: 24px;
+      border-radius: 50px;
+      margin-top: 20px;
+    }
+    .btn-read-more{
+      border-radius: 30px;
+      background-color: #055b86;
+      color: white;
+    }
+    .btn-read-more:hover{
+      background-color: #02334b;
+      color: #F1F6ED;
+      
+    }
+   
+
+  .service-section {
+  position: relative;
+  padding: 50px 0;
+}
+
+.service-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('image/bbg.jpg') center center/cover no-repeat;
+  filter: blur(3.5px); /* Reduce opacity of the background image */
+  z-index: 1;
+}
+
+.service-section .container {
+  position: relative;
+  z-index: 2; /* Ensures the content stays above the background */
+}
+
+/* Animation for Service Cards */
+.animated-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.animated-card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+
+.service-box{
+  height: auto;
+}
+    .service-box h5 {
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+    .footer {
+      background-color: #055b86;
+      color: white;
+      padding: 40px 0;
+    }
+    .footer h5 {
+      color: white;
+    }
+    .footer ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .footer ul li {
+      margin-bottom: 10px;
+    }
+    .footer .social-icons {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+  }
+
+  .footer .social-icons a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.5em;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .social-icons a:hover {
+    color: #000000;
+    transform: translateY(-10px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+ 
+   
+        .carousel-item img {
+          height: 200px;
+          object-fit: cover;
+        }
+      
+        .row.g-0 { /* Removes the gutter (space) between columns */
+          margin-left: 0;
+          margin-right: 0;
+        }
+      
+        .col-4 {
+          padding-left: 0;
+          padding-right: 0;
+        }
+
+    .footer a{
+      text-decoration: none;
+    }
+    .tick{
+      
+      color: #055b86;
+    }
+    .footer{
+      padding-bottom: 0% !important;
+    }
+    .custom-container {
+        padding: 20px;
+      }
+    
+      .text-section h2 {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+    
+      .text-section p {
+        font-size: 1rem;
+        margin-bottom: 15px;
+      }
+      
+    
+     @media (max-width: 768px) {
+    .text-section h2 {
+      font-size: 1.5rem;
+    }
+
+    .text-section p {
+      font-size: 0.9rem;
+    }
+
+    .custom-container {
+      padding: 15px;
+    }
+
+    .btn-read-more {
+      font-size: 0.8rem;
+      padding: 4px 15px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .text-section h2 {
+      font-size: 1.2rem;
+    }
+
+    .text-section p {
+      font-size: 0.8rem;
+    }
+
+    .custom-container {
+      padding: 10px;
+    }
+
+    .btn-read-more {
+      font-size: 0.7rem;
+      padding: 4px 12px;
+    }
+  }
