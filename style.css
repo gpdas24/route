@@ -336,6 +336,9 @@ p,li{
   }
 
   @media (max-width: 576px) {
+    .footer{
+      margin-top:0%;
+      margin-bottom:0%;
     .text-section h2 {
       font-size: 1.2rem;
     }
